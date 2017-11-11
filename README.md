@@ -1,5 +1,7 @@
 # node-slug
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Slynova-Org/node-slug.svg)](https://greenkeeper.io/)
+
 Transforms any text into an uri-safe string.
 
 ---
