@@ -1,6 +1,6 @@
 {
   "name": "@slynova/slug",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Romain Lanz <romain.lanz@slynova.ch>",
   "license": "MIT",
   "main": "src/index.js",
