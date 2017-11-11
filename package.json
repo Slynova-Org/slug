@@ -1,0 +1,27 @@
+{
+  "name": "@slynova/slug",
+  "version": "0.0.0",
+  "author": "Romain Lanz <romain.lanz@slynova.ch>",
+  "license": "MIT",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Slynova-Org/node-slug"
+  },
+  "bugs": {
+    "url": "https://github.com/Slynova-Org/node-slug/issues"
+  },
+  "scripts": {
+    "test": "npm run test:coverage",
+    "test:local": "japa",
+    "test:coverage": "nyc npm run test:local"
+  },
+  "devDependencies": {
+    "japa": "^1.0.5",
+    "nyc": "^11.3.0"
+  },
+  "dependencies": {
+    "charmap": "^1.0.2",
+    "lodash.kebabcase": "^4.1.1"
+  }
+}
