@@ -7,8 +7,8 @@
  * @copyright Slynova - Romain Lanz <romain.lanz@slynova.ch>
  */
 
-const kebabCase = require('lodash.kebabcase')
-const { transform } = require('charmap')
+var kebabCase = require('lodash.kebabcase')
+var transform = require('charmap').transform
 
 /**
  * Slugify any given characters.
@@ -19,10 +19,8 @@ const { transform } = require('charmap')
  *
  * @return {string}
  */
-function slug (text = null) {
-  if (text === null) {
-    return ''
-  }
+function slug (text) {
+  if (text === void 0) return ''
 
   return kebabCase(transform(text.toString()))
 }
