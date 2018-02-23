@@ -25,6 +25,17 @@ slug('tôi tên là đức tạ') // toi-ten-la-duc-ta
 slug('learn adonis in 30minutes') // learn-adonis-in-30-minutes
 ```
 
+## Extending char map
+
+To extend the char map you can use the static method `extends`
+
+```javascript
+const slug = require('@slynova/slug')
+
+slug.extends('💙', 'love')
+slug('i 💙 you') // i-love-you
+```
+
 ## Contribution Guidelines
 
 Any pull requests or discussions are welcome.<br>
