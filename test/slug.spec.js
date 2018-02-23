@@ -46,4 +46,14 @@ test.group('Slugify', () => {
   test('should convert accent text to a slug', function (assert) {
     assert.equal(slug('tôi tên là đức tạ'), 'toi-ten-la-duc-ta')
   })
+
+  test('should remove undefined unicode', (assert) => {
+    assert.equal(slug('unicode ♥ is ☢'), 'unicode-love-is')
+  })
+
+  test('should let us extends the char map', (assert) => {
+    slug.extends({ '☢': 'radioactive' })
+
+    assert.equal(slug('unicode ♥ is ☢'), 'unicode-love-is-radioactive')
+  })
 })
