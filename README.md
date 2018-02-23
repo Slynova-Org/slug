@@ -32,7 +32,7 @@ To extend the char map you can use the static method `extends`
 ```javascript
 const slug = require('@slynova/slug')
 
-slug.extends('💙', 'love')
+slug.extends({'💙': 'love'})
 slug('i 💙 you') // i-love-you
 ```
 
